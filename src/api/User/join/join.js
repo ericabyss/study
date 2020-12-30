@@ -16,7 +16,7 @@ export default {
                         departmentId: 103
                     });
                 } else {
-                    throw Error("아이디 중복 오류!!1");
+                    throw Error("아이디 중복 오류!!");
                 }
             } catch {
                 throw Error("회원가입 오류");
