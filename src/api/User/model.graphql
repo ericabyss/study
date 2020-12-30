@@ -1,0 +1,10 @@
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    password: String!
+    avatar: String!
+}
+type Query {
+    join: User
+}
