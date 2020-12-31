@@ -41,5 +41,5 @@ export const authenticateJwt = (req, res, next) => {
 };
 
 
-passport.use(new Strategy(jwtOptions, verifyUser));  //모듈화=>재사용하기위해서
+passport.use(new Strategy(jwtOptions, verifyUser));  //모듈화 : 재사용하기위해서
 passport.initialize(); // 초기화 시켜주는 아이
