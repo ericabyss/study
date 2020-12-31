@@ -5,9 +5,9 @@ export default {
     Mutation: {
         join: async (_, args, {}) => {
             const { studentId } = args;
-            const hashPassword = crypto.createHash("sha512").update(args.password).digest("base64");
+            const hashPassword = crypto.createHash("sha512").update(args.password).digest("base64");//해쉬코드 생성
             try {
-                const idCheck = await User.findOne({ where: { studentId: studentId } });
+                const idCheck = await User.findOne({ where: { studentId: studentId } }); //id중복체크
 
                 if (idCheck === null) {
                     return await User.create({

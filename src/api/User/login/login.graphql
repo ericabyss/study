@@ -1,4 +1,3 @@
 type Mutation{ #뮤테이션에 로그인이라는 리졸버를 씀
     login(studentId: String!, password: String!): String!
-
 }

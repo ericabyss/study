@@ -9,7 +9,7 @@ const jwtOptions = {
 
 //client->요청(payload)
 //ES6문법
-const verifyUser = (jwt_payload, done) => {//인자는 그대로 써야함. 작용하는 함수 async
+const verifyUser = (jwt_payload, done) => {//인자는 그대로 써야함. 작용하는 함수 : sync
     //const { user } = jwt_payload;
     console.log(jwt_payload, "verifyUser");
      if (jwt_payload) {

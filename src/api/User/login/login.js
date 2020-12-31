@@ -3,7 +3,7 @@ import { User } from "../../../sequelize";
 import jwt from "jsonwebtoken";
 
 export default{
-    Mutation: {//데이터를 입력하는 것, 수정//resolver
+    Mutation: {//데이터를 입력하는 것, 수정 : resolver
 
             login: async (_,args) => {  // ORM //자바스크립트 코드로 짜면 디비에 들어갈때는 sql문으로 
                 const { studentId, password } = args;
